@@ -8,6 +8,8 @@ import { buildConfig } from 'payload/config'
 
 import Users from './collections/Users'
 
+console.log(`my variable: ${process.env.PAYLOAD_PUBLIC_MY_VARIABLE}`)
+
 export default buildConfig({
   admin: {
     user: Users.slug,
